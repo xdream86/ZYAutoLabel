@@ -92,6 +92,7 @@ typedef NS_ENUM(NSInteger,ZYAutoLabelTouchType) {
         
         _autoLabel = [[UILabel alloc] init];
         _autoLabel.numberOfLines = 0;
+        _autoLabel.adjustsFontSizeToFitWidth = YES;
         _autoLabel.font = [UIFont systemFontOfSize:100];
         _autoLabel.textColor = KarcRandomColor;
         _autoLabel.textAlignment = NSTextAlignmentCenter;

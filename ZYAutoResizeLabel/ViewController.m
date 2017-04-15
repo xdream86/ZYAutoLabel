@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZYAutoLabel.h"
+#import "ZYSubtitleLabel.h"
 @interface ViewController ()
 
 @end
@@ -20,12 +21,16 @@
     
     self.view.backgroundColor = [UIColor grayColor];
     
-    ZYAutoLabel *autoLabel = [[ZYAutoLabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+//    ZYAutoLabel *autoLabel = [[ZYAutoLabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+//    autoLabel.center = self.view.center;
+//    autoLabel.text = @"AUTOLABEL";
+//    [self.view addSubview:autoLabel];
+    
+    
+    ZYSubtitleLabel *autoLabel = [[ZYSubtitleLabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
     autoLabel.center = self.view.center;
     autoLabel.text = @"AUTOLABEL";
     [self.view addSubview:autoLabel];
-    
-    
 }
 
 
